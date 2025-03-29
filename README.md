@@ -10,6 +10,8 @@ The project is deployed on Netlify:\
 ## Features
 
 - **User Authentication**: Users can log in using their credentials.
+ ○ Email : eve.holt@reqres.in
+ ○ Password : cityslicka
 - **User List**: Displays a paginated list of users fetched from the Reqres API.
 - **Search & Filtering**: Users can search for other users by name.
 - **Edit User**: Modify user details such as first name, last name, and email.
