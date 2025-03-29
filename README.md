@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# User Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based User Management System that interacts with the Reqres API. The application allows users to log in, view a list of users, edit user details, and delete users.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+The project is deployed on Netlify:\
+👉 [User Management System](https://req-res-manager.netlify.app/)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication**: Users can log in using their credentials.
+- **User List**: Displays a paginated list of users fetched from the Reqres API.
+- **Search & Filtering**: Users can search for other users by name.
+- **Edit User**: Modify user details such as first name, last name, and email.
+- **Delete User**: Remove a user from the list.
+- **Client-side Navigation**: Uses `React Router` for seamless page transitions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```sh
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```sh
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Project Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the development server:
 
-### `npm run eject`
+```sh
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `Login.jsx`: Handles user authentication.
+- `Userlist.jsx`: Displays the user list with search and pagination.
+- `Edituser.jsx`: Allows updating user details.
+- `Nav.jsx`: Navigation menu.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependencies
 
-## Learn More
+- React
+- React Router (`react-router-dom`)
+- Axios (`axios`)
+- React Toastify (`react-toastify`)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Assumptions & Considerations
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The application uses [Reqres](https://reqres.in/) as a mock API for testing purposes.
+- No real authentication is implemented; the token is stored in `localStorage`.
+- Editing and deleting users are simulated but do not persist beyond the session.
+- Users are paginated as per Reqres API limits.
 
-### Code Splitting
+## Hosting Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project is hosted on Netlify:\
+🔗 [User Management System](https://req-res-manager.netlify.app/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
